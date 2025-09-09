@@ -9,13 +9,13 @@ describe('NovaTarefa', () => {
     mockOnAddTask.mockClear();
   });
 
-  it('renders input and button', () => {
+  it('Renderiza o Input e o Botão', () => {
     render(<NovaTarefa onAddTask={mockOnAddTask} />);
     expect(screen.getByPlaceholderText('Digite uma nova tarefa')).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /adicionar tarefa/i })).toBeInTheDocument();
   });
 
-  it('calls onAddTask with trimmed text on submit', async () => {
+  it('chama a função onAddTask com função trim()', async () => {
     const user = userEvent.setup();
     render(<NovaTarefa onAddTask={mockOnAddTask} />);
     const input = screen.getByPlaceholderText('Digite uma nova tarefa');
@@ -28,7 +28,7 @@ describe('NovaTarefa', () => {
     expect(input).toHaveValue('');
   });
 
-  it('does not call onAddTask if input is empty', async () => {
+  it('nao chama a função onAddTask se o input estiver vazio', async () => {
     const user = userEvent.setup();
     render(<NovaTarefa onAddTask={mockOnAddTask} />);
     const button = screen.getByRole('button', { name: /adicionar tarefa/i });
@@ -38,7 +38,7 @@ describe('NovaTarefa', () => {
     expect(mockOnAddTask).not.toHaveBeenCalled();
   });
 
-  it('validates input on form submit', () => {
+  it('valida o input e o formulário', () => {
     render(<NovaTarefa onAddTask={mockOnAddTask} />);
     const form = screen.getByRole('form');
     const input = screen.getByPlaceholderText('Digite uma nova tarefa');

@@ -18,7 +18,7 @@ export default function NovaTarefa({ onAddTask }: NovaTarefaProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="mb-4">
+    <form onSubmit={handleSubmit} className="mb-4" role="form" aria-label="Formulário para adicionar tarefa">
       <input
         type="text"
         value={task}
@@ -27,7 +27,7 @@ export default function NovaTarefa({ onAddTask }: NovaTarefaProps) {
         className="border p-2 mr-2"
         required
       />
-      <button type="submit" className="bg-blue-500 text-white p-2 rounded">
+      <button type="submit" className="bg-red-700 text-white p-2 rounded">
         Adicionar Tarefa
       </button>
     </form>

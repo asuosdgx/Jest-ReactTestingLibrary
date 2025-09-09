@@ -1,5 +1,4 @@
-'use client';
-
+"use client"
 import { useState, useEffect } from 'react';
 import NovaTarefa from '@/components/NovaTarefa';
 import { useContadorDeTarefas } from '@/hooks/useContadorDeTarefas';
@@ -9,7 +8,6 @@ export default function Home() {
   const contador = useContadorDeTarefas(tarefas);
 
   useEffect(() => {
-    // Simular carregamento de tarefas
     const loadTarefas = async () => {
       const data = await Promise.resolve(['Tarefa 1', 'Tarefa 2']);
       setTarefas(data);
