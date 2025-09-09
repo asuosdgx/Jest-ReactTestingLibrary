@@ -1,3 +1,16 @@
+<h1>Introdução a testes unitários com Jest/React Testing Library</h1>
+<p>Para iniciar rode o comando npm install no terminal em seguida nmp run test</p>
+
+
+
+
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
