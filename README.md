@@ -1,11 +1,5 @@
 <h1>Introdução a testes unitários com Jest/React Testing Library</h1>
-<p>Para iniciar rode o comando npm install no terminal em seguida nmp run test</p>
-
-
-
-
-
-
+<p>Para iniciar rode o comando npm install no terminal em seguida npm run test</p><br><br><br>
 
 
 
