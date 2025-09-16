@@ -1,4 +1,6 @@
-<h1>Introdução a testes unitários com Jest/React Testing Library</h1>
+<h1>Introdução a testes unitários com Jest/React Testing Library // DevOps CI/CD Integração com Vercel utilizando variáveis de ambiente.</h1>
+<p>Aplicação construída para testes com jest, utilizando combinação de ESLint com Prettier para formatação do código, aplicando conceitos de DevOps para integração contínua, desde os testes até o deploy.</p>
+<h2>https://jest-react-testing-library.vercel.app/</h2>
 <p>Para iniciar rode o comando npm install no terminal em seguida npm run test</p><br><br><br>
 
 
