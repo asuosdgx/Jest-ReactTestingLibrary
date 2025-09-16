@@ -79,7 +79,7 @@ jobs:
       - name: Deploy Vercel
         run: vercel --prod --yes --token= ${{secrets.VERCEL_TOKEN}}
         env:
-            VERCEL_ORG_ID: ${{ vars.VERCEL_ORG_ID }}
+            VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
             VERCEL_TOKEN_ID: ${{ secrets.VERCEL_TOKEN_ID }}
             
 
