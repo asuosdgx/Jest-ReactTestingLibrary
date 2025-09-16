@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import { useState, useEffect } from 'react';
 import NovaTarefa from '@/components/NovaTarefa';
 import { useContadorDeTarefas } from '@/hooks/useContadorDeTarefas';
@@ -16,7 +16,7 @@ export default function Home() {
   }, []);
 
   const handleAddTask = (task: string) => {
-    setTarefas(prev => [...prev, task]);
+    setTarefas((prev) => [...prev, task]);
   };
 
   return (
@@ -26,7 +26,9 @@ export default function Home() {
       <NovaTarefa onAddTask={handleAddTask} />
       <ul className="list-disc pl-5">
         {tarefas.map((tarefa, index) => (
-          <li key={index} className="mb-2">{tarefa}</li>
+          <li key={index} className="mb-2">
+            {tarefa}
+          </li>
         ))}
       </ul>
     </div>

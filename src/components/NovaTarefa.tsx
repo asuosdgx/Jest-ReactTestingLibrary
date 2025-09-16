@@ -18,7 +18,12 @@ export default function NovaTarefa({ onAddTask }: NovaTarefaProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="mb-4" role="form" aria-label="Formulário para adicionar tarefa">
+    <form
+      onSubmit={handleSubmit}
+      className="mb-4"
+      role="form"
+      aria-label="Formulário para adicionar tarefa"
+    >
       <input
         type="text"
         value={task}

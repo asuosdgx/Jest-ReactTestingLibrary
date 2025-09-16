@@ -11,8 +11,12 @@ describe('NovaTarefa', () => {
 
   it('Renderiza o Input e o Botão', () => {
     render(<NovaTarefa onAddTask={mockOnAddTask} />);
-    expect(screen.getByPlaceholderText('Digite uma nova tarefa')).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /adicionar tarefa/i })).toBeInTheDocument();
+    expect(
+      screen.getByPlaceholderText('Digite uma nova tarefa'),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole('button', { name: /adicionar tarefa/i }),
+    ).toBeInTheDocument();
   });
 
   it('chama a função onAddTask com função trim()', async () => {

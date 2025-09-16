@@ -16,7 +16,7 @@ describe('useContadorDeTarefas', () => {
   it('atualiza quado o array é alterado', () => {
     const { result, rerender } = renderHook(
       ({ tarefas }) => useContadorDeTarefas(tarefas),
-      { initialProps: { tarefas: ['Tarefa 1'] } }
+      { initialProps: { tarefas: ['Tarefa 1'] } },
     );
     expect(result.current).toBe(1);
 

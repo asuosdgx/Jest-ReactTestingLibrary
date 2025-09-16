@@ -22,7 +22,11 @@ describe('Home Page', () => {
     await act(async () => {
       render(<Home />);
     });
-    expect(screen.getByPlaceholderText('Digite uma nova tarefa')).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /adicionar tarefa/i })).toBeInTheDocument();
+    expect(
+      screen.getByPlaceholderText('Digite uma nova tarefa'),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole('button', { name: /adicionar tarefa/i }),
+    ).toBeInTheDocument();
   });
 });
